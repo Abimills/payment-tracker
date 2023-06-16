@@ -1,4 +1,4 @@
-import quotes from "../quote";
+import quotes from "../../components/quoteData/quote";
 
 export default async function handler(req, res) {
   if (req.method === "GET") {
