@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;300;400;500;600;800;1000&display=swap");
+/* font-family: 'Roboto Flex', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300;1,400&display=swap");
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+/* nice one down here */
+/* font-family: 'Sacramento', cursive; */
+/* robotic font */
+/* font-family: 'Montserrat', sans-serif; */
+.motherContainer {
+  overflow-x: hidden;
+}
+.header {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+.weekInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 10rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+.changeForm {
+  width: 60%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dotted teal;
+  padding: 60px 20px;
+}
+.userInfo {
+  width: 64%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dotted teal;
+  padding: 10px;
+  gap: 1rem;
+}
+.userInfo p {
+  /* font-family: 'Sacramento', cursive; */
+  text-transform: capitalize;
+  margin: 5px;
+  /* margin-left: 12.5rem; */
+  font-weight: 600;
+  /* width: 200px; */
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+}
+.submitBtn {
+  padding: 10px 30px;
+  border: 1px solid teal;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: white;
+  color: teal;
+}
+.submitBtn:hover {
+  background-color: teal;
+  color: white;
+}
+.infoChangeContainers label {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  border: 1px dotted teal;
+  color: teal;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.userInfo h1 {
+  font-family: "Sacramento", cursive;
+  color: teal;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.userPic {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  /* margin-left: 1rem; */
+  border-radius: 50%;
+  /* margin-top: 1rem; */
+  /* margin-bottom: -2rem; */
+}
+.changeForm input {
+  padding: 10px 30px;
+  display: inline;
+  margin: 1rem;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid teal;
+}
+.infoChangeContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infoChangeContainers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infoChangeContainers input::placeholder {
+  color: teal;
+}
+.moneyContain input::placeholder {
+  color: white;
+}
+.moneyContain input {
+  background-color: teal;
+}
+.infoChangeContainers input {
+  border: 1px solid teal;
+}
+.dayOfWeek {
+  font-family: "Sacramento", cursive;
+  color: teal;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+/* nice one down here */
+/* font-family: 'Sacramento', cursive; */
+/* robotic font */
+/* font-family: 'Montserrat', sans-serif; */
+
+/*  contact page */
+
+.contactContainer {
+  width: 90%;
+  position: relative;
+  top: 6rem;
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.contactContainer button {
+  padding: 10px;
+  color: white;
+  background-color: teal;
+  border: 1px solid teal;
+}
+.contactForm input {
+  padding: 10px;
+  color: white;
+  background-color: teal;
+  border: 1px solid teal;
+  outline: none;
+}
+.contactForm textarea {
+  outline: none;
+}
+.contactContainer h1 {
+  margin: 1rem;
+}
+.contactForm input::placeholder {
+  color: white;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contactForm {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 80px 40px;
+}
+.iconInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.container button:hover {
+  background-color: #45a049;
+}
+.personalInfo {
+  width: 100%;
+  margin: 1rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.personalInfo p {
+  /* width: 200px; */
+  background-color: white;
+  margin: 1rem;
+  font-family: "Sacramento", cursive;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .changeForm {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: 0px;
+  }
+
+  .contactForm {
+    padding: 10px;
+
+  }
+  .contactForm input {
+    width: 80%;
+  }
+  .personalInfo{
+    width: 90%;
+    justify-content: flex-start;
+  }
+  .personalInfo p{
+    text-align: left;
+    font-size: 01.1rem;
+  }
+  .iconInfo{
+    justify-content: flex-start;
+  }
+  .personalInfo p {
+    width: 50%;
+  }
+  .contactForm textarea {
+    width: 80%;
+  }
+  .infoChangeContainers {
+    margin: 5px 0;
+    width: 90%;
+  }
+  .infoChangeContainers input::placeholder {
+    font-size: 12px;
+  }
+  .infoChangeContainers input {
+    width: 50%;
+  }
+  .infoChangeContainers label {
+    font-size: 10px;
+    width: 50%;
+    border: none;
+
+  }
+  .userInfo {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted teal;
+    padding: 10px;
+    gap: 1rem;
+  }
+  .userInfo p {
+    font-size: 9px;
+    font-weight: 300;
+  }
+  .submitBtn{
+    margin-bottom: 1rem;
+  }
+}

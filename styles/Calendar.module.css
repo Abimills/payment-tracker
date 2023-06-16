@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;300;400;500;600;800;1000&display=swap");
+/* font-family: 'Roboto Flex', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300;1,400&display=swap");
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+/* nice one down here */
+/* font-family: 'Sacramento', cursive; */
+/* robotic font */
+/* font-family: 'Montserrat', sans-serif; */
+
+.moneyIcon {
+  font-size: 4rem;
+}
+.btnsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.passiveType {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid aqua;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.activeType {
+  color: white;
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid aqua;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color: aqua;
+}
+.calendarContain {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/calendar.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendarContain div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(180, 176, 176, 0.3);
+  backdrop-filter: blur(3px);
+}
+.calendarContain div h1 {
+  font-family: "Sacramento", cursive;
+  color: teal;
+  font-size: 3rem;
+}

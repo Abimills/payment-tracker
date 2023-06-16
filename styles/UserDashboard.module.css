@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;300;400;500;600;800;1000&display=swap");
+/* font-family: 'Roboto Flex', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300;1,400&display=swap");
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+/* nice one down here */
+/* font-family: 'Sacramento', cursive; */
+/* robotic font */
+/* font-family: 'Montserrat', sans-serif; */
+/* display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; */
+.container {
+  margin-top: 8rem;
+}
+
+.userWork {
+  display: flex;
+
+  /* align-items: center; */
+  gap: 2rem;
+  flex-direction: column;
+}
+.startIcon {
+  text-align: center;
+
+  rotate: 180deg;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 10px;
+}
+.userIcon {
+  border: 1px dotted teal;
+  padding: 10px;
+  border-radius: 50%;
+  color: teal;
+}
+.user p {
+  border: 1px solid gray;
+  width: max-content;
+  padding: 4px 30px;
+  margin: 10px 0;
+  width: 100px;
+  min-width: 100px;
+  text-align: center;
+  background-color: teal;
+  color: white;
+  font-family: "Pacifico", cursive;
+}
+.user button {
+  min-width: 161px;
+  padding: 5px 10px;
+  background-color: teal;
+  border: 1px solid teal;
+  outline: none;
+  color: white;
+  transition: all 0.5s ease-in;
+  font-family: "Lobster Two", cursive;
+  text-transform: capitalize;
+}
+
+.user button:hover {
+  background-color: transparent;
+  color: black;
+}
+.work {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dueDate {
+  background-image: url("/images/quoteimg.png");
+  background-size: cover;
+  padding: 5px 40px;
+  height: 150px;
+  /* width: 100%; */
+  color: black;
+  border: 1px solid rgb(121, 94, 26);
+  /* margin: 0 5px; */
+  display: flex;
+  align-items: center;
+  rotate: 7deg;
+  gap: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.infoIcon {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.work p {
+  margin-bottom: 1rem;
+  font-size: 10px;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+}
+.checkInContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.checkIn,
+.checkOut {
+  width: 150px;
+  height: 50px;
+
+  border-radius: 30px;
+  color: black;
+  margin-bottom: 1rem;
+  font-family: "Pacifico", cursive;
+  font-size: 16px;
+  color: rgb(46, 154, 30);
+  background-image: url("/images/teal-wood.jpg");
+  background-size: cover;
+  border: 1px solid aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.earingHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leafyImage {
+  display: none;
+}
+.leafyImgContainer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.earingHeader h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: teal;
+}
+.checkOut {
+  background-color: aquamarine;
+  color: rgb(92, 58, 58);
+  border: 1px solid aquamarine;
+}
+.checkOut:hover {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.checkIn:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: white;
+}
+.checkInInfoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.love {
+  width: 95%;
+  height: 300px;
+  padding: 5px;
+  display: flex;
+  background-image: url("/images/two-lines.jpg");
+  background-size: contain;
+  margin: 10px;
+
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  border-radius: 30px;
+  border: 1px dotted teal;
+}
+.name {
+  display: flex;
+  align-items: center;
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 100;
+  color: teal;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.earning {
+  width: 100%;
+  padding: 20px;
+  /* margin-bottom: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* border: 1px dotted teal; */
+  /* margin-top: -2rem; */
+}
+.checkInInfoContainer p {
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  color: rgb(105, 160, 22);
+}
+.earningInfo {
+  /* background-color: greenyellow; */
+  margin: 6px 0;
+  padding: 10px 20px;
+  font-family: "Sacramento", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: max-content;
+  margin: 0 1rem;
+  color: teal;
+}
+.clock {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.hoursWorked {
+  color: orange;
+  background-color: whitesmoke;
+  padding: 0 15px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+.earnedMoney {
+  color: orange;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
+.workingImage {
+  height: 60%;
+  width: 50%;
+  /* rotate: 30deg; */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  object-fit: cover;
+}
+.startTime {
+  /* background-color: rgb(14, 71, 71); */
+  border: 1px solid rgb(14, 71, 71);
+  color: teal;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.earningInfo span {
+  max-width: max-content;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  color: teal;
+  font-size: 0.88rem;
+}
+.dashed {
+  height: 50px;
+  border: 1px dashed rgb(201, 197, 197);
+}
+.startTimeImage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .userWork {
+    flex-direction: column;
+    width: 100%;
+  }
+  .userMother {
+    position: relative;
+    width: 100%;
+    /* margin-bottom: 8rem; */
+  }
+  .closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.4rem;
+    z-index: 10;
+  }
+  .user {
+    position: absolute;
+    background-color: aliceblue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px dotted gray;
+
+    /* border-radius: 50px; */
+  }
+  .checkInInfoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .checkInInfoContainer p {
+    font-family: "Sacramento", cursive;
+    font-size: 26px;
+  }
+  .startTimeImage {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .checkInInfoContainer p span {
+    color: orange;
+    /* padding: 10px; */
+    margin: 0.3rem;
+
+    /* text-decoration: underline; */
+  }
+  .clock {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  .name {
+    display: flex;
+    align-items: center;
+    font-family: "Sacramento", cursive;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 100;
+    color: teal;
+    text-transform: capitalize;
+  }
+  .startTime:nth-child(4) {
+    background-color: rgb(62, 167, 167);
+    margin-top: -1rem;
+  }
+  .startTime:nth-child(3) {
+    background-color: rgb(27, 154, 154);
+    margin-top: -1rem;
+  }
+  .stopSign {
+    color: greenyellow;
+  }
+  .startTime {
+    /* background-color: rgb(14, 71, 71); */
+    border: 1px solid rgb(14, 71, 71);
+    color: teal;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .smiley {
+    color: orange;
+  }
+  .userIcon {
+    font-size: 2rem;
+    margin-left: -1.6rem;
+  }
+  .user p {
+    width: 80%;
+  }
+  .work h3 {
+    padding: 20px;
+  }
+  .work p {
+    padding: 20px;
+    width: 100%;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: teal;
+  }
+  .work h3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .work {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .earning {
+    width: 100%;
+    padding: 20px;
+    /* margin-bottom: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -2rem;
+  }
+  .love {
+    width: 95%;
+    /* height: 300px; */
+    padding: 5px;
+    display: flex;
+    margin: 10px;
+
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    border: 1px solid teal;
+  }
+  .workingImage {
+    object-fit: cover;
+  }
+  .earningInfo {
+    /* background-color: greenyellow; */
+    margin: 6px 0;
+    padding: 10px 20px;
+    font-family: "Sacramento", cursive;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: max-content;
+    margin: 0 1rem;
+    color: teal;
+  }
+  .dashed {
+    height: 50px;
+    border: 1px dashed rgb(201, 197, 197);
+  }
+  .earningInfo span {
+    max-width: max-content;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    color: teal;
+    font-size: 0.88rem;
+  }
+  .dateIcons {
+    font-size: 1.2rem;
+    color: teal;
+  }
+}
+@media screen and (max-width: 550px) {
+  .earning {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .earningInfo {
+    border: 1px dotted teal;
+    width: 40%;
+  }
+
+  .dueDate {
+    border: none;
+  }
+  .dashed {
+    display: none;
+  }
+  .love {
+    flex-direction: column-reverse;
+    margin: 1rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .workingImage {
+    width: 100%;
+    display: none;
+  }
+  .leafyImage {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .checkInInfoContainer{
+    /* margin-top: 2rem; */
+    width: 100%;
+    /* background-color: red; */
+  }
+  .checkInInfoContainer p {
+    color: black;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: rgba(155, 231, 41,0.1);;
+    /* margin-top: 4rem; */
+    backdrop-filter: blur(5px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .checkIn,
+  .checkOut {
+    width: 120px;
+    height: 40px;
+    font-size: small;
+  }
+  .checkInContainer {
+    gap: 1rem;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .name {
+    font-size: 1.4rem;
+  }
+}

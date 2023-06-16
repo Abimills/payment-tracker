@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap');
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+.quotesContainer{
+      width: 100%;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      
+      
+}
+
+.quotesContainer h3{
+      color:aqua;
+      font-size:3.5rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      
+      
+}
+.quotesContainer h4{
+      font-family: 'Pacifico', cursive;
+      border: 1px dotted teal;
+      border-radius: 30px;
+      padding: 15px;
+      cursor:pointer;
+      background-color: teal;
+      color:white;
+
+ }
+ .quotesContainer h4:hover{
+          color:greenyellow;
+      }
+ .nextBtn{
+      margin: 2rem 0;
+      padding: 10px 30px;
+      background-color: transparent;
+      border:1px solid teal;
+      color:black;
+     font-size: 1.1rem;
+      border-radius: 30px;
+      font-family: 'Lobster Two', cursive;
+cursor: pointer;
+
+}
+.nextBtn:hover{
+      background-color: teal;
+      color:white;
+
+
+}

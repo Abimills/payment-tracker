@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;300;400;500;600;800;1000&display=swap");
+/* font-family: 'Roboto Flex', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300;1,400&display=swap");
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Pacifico', cursive; */
+/* nice one down here */
+/* font-family: 'Sacramento', cursive; */
+/* robotic font */
+/* font-family: 'Montserrat', sans-serif; */
+
+.loginContainer {
+  width: 100%;
+  
+  position: relative;
+  top: 9rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 3rem; */
+}
+.loginHeader {
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  font-family: 'Pacifico', cursive;
+  font-weight: 100;
+  color:teal;
+}
+.woman{
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border:  1px solid teal;
+  padding: 10px;
+  border-radius: 50%;
+}
+.btnContainer {
+      display: flex;
+      flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px dotted teal;
+  width: 50%;
+  height: 150px;
+  border-radius: 30px;
+  padding: 50px 10px;
+  margin: 2rem 0;
+  height: 300px;
+}
+.btnContainer div {
+      display: flex;
+      gap: 3rem;
+
+}
+.loginBtn {
+  padding: 10px 40px;
+  background-color: teal;
+  font-family: "Sacramento", cursive;
+  color: white;
+  border: 1px solid teal;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  
+  font-family: "Montserrat", sans-serif;
+}
+.loginBtn:hover {
+background-color: transparent;
+color:black;
+
+}
+
+.homeBtn{
+  color:teal;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: white;
+  border: 1px solid black;
+}
+.homeBtn:hover{
+
+  background-color: black;
+
+  color:white;
+  border: 1px solid black;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "tutu",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.0",
+    "next": "^13.4.4",
+    "next-auth": "^4.22.1",
+    "react": "18.2.0",
+    "react-big-calendar": "^1.6.9",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-loading": "^2.0.3",
+    "react-spinners": "^0.13.8"
+  }
+}

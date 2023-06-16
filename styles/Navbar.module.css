@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap");
+
+/* font-family: 'Lobster Two', cursive; */
+/* font-family: 'Pacifico', cursive; */
+
+.container {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 9999;
+
+  background-color: white;
+}
+
+.logo {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* border-radius: 15% 85% 56% 44% / 52% 71% 29% 48% ; */
+  cursor: pointer;
+  /* background-color: transparent; */
+}
+.linkTag {
+  text-decoration: none;
+  color: inherit;
+}
+.main {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+}
+.activeBar {
+  padding: 0px 20px;
+  background-color: teal;
+  color: white;
+  border-radius: 30px;
+  transition: all 0.6s ease-in-out;
+}
+
+.navContainer li {
+  font-family: "Pacifico", cursive;
+  cursor: pointer;
+}
+.loginContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hamburgerMenu {
+  display: none;
+}
+
+.loginBtn {
+  padding: 2px 25px;
+  border: 1px solid teal;
+  background-color: white;
+  color: black;
+  font-family: "Pacifico", cursive;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.loginBtn:hover {
+  background-color: teal;
+  color: white;
+}
+.Navigationicon {
+  display: none;
+}
+/* .navContainer li{
+            display: flex;
+            align-items: center;
+            gap : 1rem;
+            width: 200px;
+      } */
+@media screen and (max-width: 900px) {
+  .navContainer {
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+
+    right: 10px;
+    top: 80px;
+    background-color: rgba(4, 127, 127,0.7);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease-in-out;
+  }
+  .navHide {
+    height: 0;
+
+    display: none;
+    transition: all 1s ease-in-out;
+  }
+  .navContainer li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 200px;
+  }
+  .Navigationicon {
+    display: block;
+    color: aqua;
+  }
+  .hamburgerMenu {
+    display: block;
+    color: white;
+    font-size: 1.3rem;
+    border: 1px solid teal;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: teal;
+  }
+  .hamburgerMenu:hover {
+    background-color: transparent;
+    color: teal;
+  }
+}
+@media screen and (max-width:500px) {
+
+.logo {
+ 
+  width: 35px;
+  height: 35px;
+}
+.loginBtn{
+      padding: 1px 12px;
+      font-size: 0.7rem;
+      
+}
+      
+}
