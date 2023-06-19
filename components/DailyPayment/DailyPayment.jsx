@@ -13,7 +13,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 const DailyPayment = ({ title, spokes }) => {
   const baseUrl =
     process.env.NODE_ENV === "production"
-      ? "https://payment-tracker-one.vercel.app"
+      ? "https://abimills.vercel.app/"
       : "http://localhost:3000";
   // loading{ type, color }
 

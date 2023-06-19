@@ -20,7 +20,7 @@ const DayData = () => {
   const [totalWorked, setTotalWorked] = useState(null);
   const baseUrl =
     process.env.NODE_ENV === "production"
-      ? "https://payment-tracker-one.vercel.app"
+      ? "https://abimills.vercel.app/"
       : "http://localhost:3000";
   const fetchSalary = async () => {
     try {
