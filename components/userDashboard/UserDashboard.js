@@ -272,8 +272,7 @@ const UserDashboard = () => {
     const [hours2, minutes2, seconds2] = time2.split(":").map(Number);
 
     // Calculate the time difference in minutes
-    const diffInMinutes =
-      (hours2 + 10) * 60 + (minutes2 + 10) - (hours1 * 60 + minutes1);
+    const diffInMinutes = hours2 * 60 + minutes2 - (hours1 * 60 + minutes1);
 
     const todayWork = {
       today: startTime?.day,
@@ -290,11 +289,12 @@ const UserDashboard = () => {
   };
   const formatMyCurrentTime = `${startTime?.day}`;
   const newFormat = formatMyCurrentTime.split(" ");
-
+  console.log();
+  const firstName = session?.user?.name?.split(" ")[0];
   return (
     <div className={styles.container}>
       <div className={styles.userWork}>
-        <h2 className={styles.name}>Good Afternoon {session?.user?.name}</h2>
+        <h2 className={styles.name}>Good Morning {firstName}</h2>
         <div className={styles.love}>
           {data ? (
             <Image
