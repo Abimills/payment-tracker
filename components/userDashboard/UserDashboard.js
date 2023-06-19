@@ -291,7 +291,7 @@ const UserDashboard = () => {
   return (
     <div className={styles.container}>
       <div className={styles.userWork}>
-        <h2 className={styles.name}>Good Morning {session?.user?.name}</h2>
+        <h2 className={styles.name}>Good Afternoon {session?.user?.name}</h2>
         <div className={styles.love}>
           {data ? (
             <Image
