@@ -24,7 +24,10 @@ const UserDashboard = () => {
   const [loadingWeek, setLoadingWeek] = useState(false);
   const [quote, setQuote] = useState(null);
   const [quoteOfToday, setQuoteOfToday] = useState(null);
-  const baseUrl = "https://payment-tracker-one.vercel.app";
+  const baseUrl =
+    process.env.NODE_ENV === "production"
+      ? "https://payment-tracker-one.vercel.app"
+      : "http://localhost:3000";
   const totalWeek = weeklyData
     ?.reduce((total, day) => {
       return total + day.total;
@@ -299,7 +302,6 @@ const UserDashboard = () => {
               height={"200"}
               src="/images/finish.png"
               className={styles.workingImage}
-              
               alt="work image"
             />
           ) : (
