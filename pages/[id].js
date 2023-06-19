@@ -18,10 +18,11 @@ const DayData = () => {
   const [endTime, setEndTime] = useState(null);
   const [hourlyWage, setHourlyWage] = useState(null);
   const [totalWorked, setTotalWorked] = useState(null);
-
+  const baseUrl =
+    "https://payment-tracker-pkz7ryr04-abimills.vercel.app/contact";
   const fetchSalary = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/api/salary/?id=${id}`);
+      const res = await fetch(`${baseUrl}/api/salary/?id=${id}`);
       const data = await res.json();
       if (data) {
         setData(data);

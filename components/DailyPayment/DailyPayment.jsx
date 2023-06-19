@@ -1,5 +1,5 @@
 import styles from "../../styles/Daily.module.css";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { useSession } from "next-auth/react";
 import { AiFillEdit } from "react-icons/ai";
 
@@ -11,6 +11,8 @@ import Image from "next/image";
 import ClipLoader from "react-spinners/ClipLoader";
 
 const DailyPayment = ({ title, spokes }) => {
+  const baseUrl =
+    "https://payment-tracker-pkz7ryr04-abimills.vercel.app/contact";
   // loading{ type, color }
 
   const [activeWeek, setActiveWeek] = useState(0);
@@ -72,7 +74,7 @@ const DailyPayment = ({ title, spokes }) => {
         const date = new Date(day).toISOString().split("T")[0];
 
         const resMonth = await fetch(
-          `http://localhost:3000/api/salary/?time=${date}&email=${session?.user?.email}`
+          `${baseUrl}/api/salary/?time=${date}&email=${session?.user?.email}`
         );
         const dataMonth = await resMonth.json();
         if (dataMonth?.data?.length > 0) {

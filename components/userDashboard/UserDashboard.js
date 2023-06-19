@@ -24,6 +24,8 @@ const UserDashboard = () => {
   const [loadingWeek, setLoadingWeek] = useState(false);
   const [quote, setQuote] = useState(null);
   const [quoteOfToday, setQuoteOfToday] = useState(null);
+  const baseUrl =
+    "https://payment-tracker-pkz7ryr04-abimills.vercel.app/contact";
   const totalWeek = weeklyData
     ?.reduce((total, day) => {
       return total + day.total;
@@ -32,7 +34,7 @@ const UserDashboard = () => {
 
   const getQuote = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/quotes");
+      const response = await fetch(`${baseUrl}/api/quotes`);
       const data = await response.json();
       setQuote(data);
     } catch (error) {
@@ -55,7 +57,7 @@ const UserDashboard = () => {
     try {
       setLoadingDaily(true);
       const res = await fetch(
-        `http://localhost:3000/api/salary/?time=${
+        `${baseUrl}/api/salary/?time=${
           new Date().toISOString().split("T")[0]
         }&email=${session?.user?.email}
     `
@@ -98,7 +100,7 @@ const UserDashboard = () => {
         setLoadingWeek(true);
         for (const day of daysOfWeek) {
           const resWeek = await fetch(
-            `http://localhost:3000/api/salary/?time=${day}&email=${session?.user?.email}`
+            `${baseUrl}/api/salary/?time=${day}&email=${session?.user?.email}`
           );
           const dataWeek = await resWeek.json();
 
@@ -135,7 +137,7 @@ const UserDashboard = () => {
       setLoading(true);
       for (const day of daysOfMonth) {
         const resMonth = await fetch(
-          `http://localhost:3000/api/salary/?time=${day}&email=${session?.user?.email}`
+          `${baseUrl}/api/salary/?time=${day}&email=${session?.user?.email}`
         );
         const dataMonth = await resMonth.json();
         if (dataMonth?.data?.length > 0) {
@@ -280,7 +282,7 @@ const UserDashboard = () => {
       total: diffInMinutes * hourlyWage,
       email,
     };
-    const res = await axios.post("http://localhost:3000/api/salary", todayWork);
+    const res = await axios.post(`${baseUrl}/api/salary`, todayWork);
 
     setData(res?.data?.data);
   };
