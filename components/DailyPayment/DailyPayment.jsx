@@ -11,8 +11,7 @@ import Image from "next/image";
 import ClipLoader from "react-spinners/ClipLoader";
 
 const DailyPayment = ({ title, spokes }) => {
-  const baseUrl =
-    "https://payment-tracker-pkz7ryr04-abimills.vercel.app/contact";
+  const baseUrl = "https://payment-tracker-alop-fwsjmyuf1-abimills.vercel.app";
   // loading{ type, color }
 
   const [activeWeek, setActiveWeek] = useState(0);

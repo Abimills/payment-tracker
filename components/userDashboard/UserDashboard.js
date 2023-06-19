@@ -24,8 +24,7 @@ const UserDashboard = () => {
   const [loadingWeek, setLoadingWeek] = useState(false);
   const [quote, setQuote] = useState(null);
   const [quoteOfToday, setQuoteOfToday] = useState(null);
-  const baseUrl =
-    "https://payment-tracker-pkz7ryr04-abimills.vercel.app/contact";
+  const baseUrl = "https://payment-tracker-alop-fwsjmyuf1-abimills.vercel.app";
   const totalWeek = weeklyData
     ?.reduce((total, day) => {
       return total + day.total;
